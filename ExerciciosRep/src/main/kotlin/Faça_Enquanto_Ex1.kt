@@ -5,26 +5,26 @@ só que contando de 3 em 3 quando estiver entre 300 e 400 e de 5 em 5 quando nã
 
 fun main ()
 {
-  var Cont = 233
+  var cont = 233
 
   do
   {
-    println (Cont)
-    Cont = (Cont + 5)
+    println (cont)
+    cont = (cont + 5)
   }
-  while (Cont <= 299)
+  while (cont <= 299)
 
   do
   {
-    println (Cont)
-    Cont = (Cont + 3)
+    println (cont)
+    cont = (cont + 3)
   }
-  while (Cont >= 300 && Cont <= 400)
+  while (cont <= 400)
 
   do
   {
-    println (Cont)
-    Cont = (Cont + 5)
+    println (cont)
+    cont = (cont + 5)
   }
-  while (Cont >= 400 &&  Cont <= 456)
+  while (cont <= 456)
 }

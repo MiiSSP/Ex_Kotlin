@@ -10,31 +10,31 @@ import java.util.Scanner
 
 fun main()
 {
-    val N = Scanner(System.`in`)
-    var Soma = 0.0
-    var Contador = 0
-    var Num = 0.0
+    val n = Scanner(System.`in`)
+    var soma = 0.0
+    var contador = 0
+    var num = 0.0
 
     println("Bem Vindo")
     println()
 
-    while (Num >= 0)
+    while (num >= 0)
     {
-        Soma += Num
-        Contador ++
+        soma += num
+        contador ++
         print("Escreva aqui seu número: ")
-        Num = N.nextDouble()
+        num = n.nextDouble()
     }
-         if (Num < 0)
+         if (num < 0)
          {
-          Contador --
+          contador --
          }
 
-    val Media = Soma / Contador
+    val media = soma / contador
     println()
     println ("Estes são os valores")
-    println ("Da soma dos números informados: $Soma")
-    println ("Da média dos números informados: $Media")
-    println ("Da quantidade total de números inseridos: $Contador")
+    println ("Da soma dos números informados: $soma")
+    println ("Da média dos números informados: $media")
+    println ("Da quantidade total de números inseridos: $contador")
 
 }

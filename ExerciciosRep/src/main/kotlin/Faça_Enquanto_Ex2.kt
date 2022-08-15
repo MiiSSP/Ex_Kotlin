@@ -7,24 +7,24 @@ soma de todos os números  de 1 até ele. Ex.: o usuário entra
 import java.util.Scanner
 
 fun main() {
-    val N = Scanner(System.`in`)
-    var Soma = 0.0
-    var Contador = 0
+    val n = Scanner(System.`in`)
+    var soma = 0.0
+    var contador = 0
 
     println("Bem Vinde!")
 
     print("Escreva aqui seu número: ")
-    val Num = N.nextDouble()
+    val num = n.nextDouble()
 
     do
     {
-        Soma += Contador
-        Contador++
+        soma += contador
+        contador++
     }
 
-    while(Contador <= Num)
+    while(contador <= num)
 
-    println("O valor do seu calculo é: $Soma")
+    println("O valor do seu calculo é: $soma")
 
 
 }

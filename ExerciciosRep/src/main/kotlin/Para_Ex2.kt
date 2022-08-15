@@ -5,17 +5,17 @@ que são  múltiplos de três e que se encontram no conjunto dos números de 1 a
 
 fun main ()
 {
-    var Soma = 0
+    var soma = 0
 
     print ("Estes são alguns dos números impares, multiplos de")
 
-    for (Cont in 1 .. 500)
+    for (cont in 1 .. 500)
         {
-            if (Cont % 2 == 1 && Cont % 3 == 0)
+            if (cont % 2 == 1 && cont % 3 == 0)
             {
-                println (" $Cont")
-                Soma = (Soma + Cont)
+                println (" $cont")
+                soma = (soma + cont)
             }
         }
-    println ("O resultado da soma destes números é: $Soma")
+    println ("O resultado da soma destes números é: $soma")
 }
