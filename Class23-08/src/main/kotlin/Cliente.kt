@@ -4,12 +4,17 @@ class Cliente (
     var telefone: String,
 ) {
 
-   private val listComp = mutableListOf<String>()
+    //AS FUNÇÕES ESTÃO COMENTADAS PARA QUE OS TESTES FUNCIONEM!!!
+   private val _listComp = mutableListOf<String>()
+    val listComp: List<String> = _listComp
 
-    init
+   /*init
     {
     dadosCli()
     }
+
+    */
+
 
     fun dadosCli()
     {
@@ -27,39 +32,39 @@ class Cliente (
             }
     }
 
-    fun  addCompras()
+    fun  addCompras (produto: String)
     {
 
-        while (true)
-        {
+       // while (true)
+        //{
             print("\nInsira a descrição do produto a ser adicionado: ")
-            val produto = readln()
+            //val  produto = readln()
 
-            if (produto != "")
+            if (produto.isNotBlank())
             {
-                listComp.add (produto)
-                println("Produto $produto adicionado com secesso!")
-                break
+                _listComp.add (produto)
+                println("Produto $produto adicionado com sucesso!")
+                //break
             }
             else
             {
                 println("Produto inválido!")
             }
 
-        }
+        //}
     }
 
-    fun  remCompras()
+    fun  remCompras (produto: String)
     {
         while (true)
         {
             print("Insira o produto a ser removido: ")
-            val produto = readln()
+            //val produto = readln()
 
-            if (listComp.contains(produto))
+            if (_listComp.contains(produto))
             {
-                listComp.remove (produto)
-                println("Produto $produto removido com secesso!")
+                _listComp.remove (produto)
+                println("Produto $produto removido com sucesso!")
                 break
             }
             else
@@ -72,7 +77,7 @@ class Cliente (
     fun  exibirCompras()
     {
         println(".........LISTA DE COMPRAS.......")
-        listComp.forEach{
+        _listComp.forEach{
             println(it)
         }
 

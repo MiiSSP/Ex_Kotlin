@@ -24,8 +24,8 @@ fun main ()
         print("\nInsira o número correspondente a opção escolhida: ")
 
         when (readln().toInt()) {
-            1 -> cliente.addCompras()
-            2 -> cliente.remCompras()
+            1 -> cliente.addCompras("")
+            2 -> cliente.remCompras("")
             3 -> cliente.exibirCompras()
             4 -> break
             else -> println("Opção Invalida")

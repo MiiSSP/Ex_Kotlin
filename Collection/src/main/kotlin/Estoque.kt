@@ -17,7 +17,7 @@ fun main ()
         {
             1 -> {addPro()}
             2 -> {remPro()}
-            3 -> {}
+            3 -> {atPro()}
             4 -> {listPro()}
             5 -> {break}
             else -> println ("Opção Invalida")

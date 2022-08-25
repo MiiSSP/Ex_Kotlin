@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ClienteTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-08-25T18:26:52" hostname="DESKTOP-T3TGMPJ" time="0.087">
+  <properties/>
+  <testcase name="remComprasTest()" classname="ClienteTest" time="0.079"/>
+  <testcase name="addComprasTest()" classname="ClienteTest" time="0.006"/>
+  <system-out><![CDATA[
+Insira a descrição do produto a ser adicionado: Produto agua adicionado com sucesso!
+
+Insira a descrição do produto a ser adicionado: Produto mel adicionado com sucesso!
+
+Insira a descrição do produto a ser adicionado: Produto bolacha adicionado com sucesso!
+
+Insira a descrição do produto a ser adicionado: Produto leite adicionado com sucesso!
+Insira o produto a ser removido: Produto agua removido com sucesso!
+
+Insira a descrição do produto a ser adicionado: Produto agua adicionado com sucesso!
+
+Insira a descrição do produto a ser adicionado: Produto mel adicionado com sucesso!
+
+Insira a descrição do produto a ser adicionado: Produto bolacha adicionado com sucesso!
+
+Insira a descrição do produto a ser adicionado: Produto leite adicionado com sucesso!
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -81,19 +81,19 @@ fun listPro ()
 fun atPro ()
 {
     println("Digite o código e a descrição do produto que deseja atualizar: ")
-    val cod = readln().toInt()
-    val desc = readln()
+    var cod = readln().toInt()
+    var desc = readln()
 
-    /*if (controlEst.containsKey(cod) && controlEst.containsValue(desc))
+    if (controlEst.containsKey(cod) && controlEst.containsValue(desc))
     {
-        val p = controlEst.onEachIndexed {cod, desc -> println("Digite o novo nome do convidado: ")}
+        val prod = controlEst.onEachIndexed {cod, desc ->
+            println("Digite o novo nome do convidado: ")}
 
+        cod = readln().toInt()
+        desc = readln()
 
-        controlEst[p] = readln()
         println("Convidado atualizado com sucesso!")
     }
     else (println ("O produto informado não existe"))
-
-     */
 
 }

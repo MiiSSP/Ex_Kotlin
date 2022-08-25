@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="classes.CachorroTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-08-25T15:24:44" hostname="DESKTOP-T3TGMPJ" time="0.047">
+  <properties/>
+  <testcase name="som()" classname="classes.CachorroTest" time="0.04"/>
+  <testcase name="nome()" classname="classes.CachorroTest" time="0.002"/>
+  <testcase name="idade()" classname="classes.CachorroTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
