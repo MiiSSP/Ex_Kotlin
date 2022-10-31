@@ -70,11 +70,14 @@ fun listPro ()
         println("Descrição: $desc, código: $cod") }
 
     print("\nPara retornar ao menu principal, digite 1: ")
-    val resp = readln().toInt()
+    var resp = readln().toInt()
 
-    if (resp != 1)
+    while (resp != 1)
     {
         println ("Opção Invalida")
+
+        print("\nPara retornar ao menu principal, digite 1: ")
+        resp = readln().toInt()
     }
 }
 
@@ -86,14 +89,11 @@ fun atPro ()
 
     if (controlEst.containsKey(cod) && controlEst.containsValue(desc))
     {
-        val prod = controlEst.onEachIndexed {cod, desc ->
-            println("Digite o novo nome do convidado: ")}
+        println("Digite o novo nome do produto: ")
 
-        cod = readln().toInt()
-        desc = readln()
+        controlEst[cod] = readln()
 
-        println("Convidado atualizado com sucesso!")
+        println("Produto atualizado com sucesso!")
     }
     else (println ("O produto informado não existe"))
-
 }
